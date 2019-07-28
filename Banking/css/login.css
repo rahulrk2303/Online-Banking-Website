@@ -1,0 +1,31 @@
+body {
+
+	background-image: url("../images/2.jpg");
+
+	background-size: cover;
+	background-position: 0% 0%;
+	background-repeat: no-repeat;
+	font-family: 'Quicksand', sans-serif;
+	
+}
+
+.login-container {
+
+	border: solid gray 1px;
+	width: 40%;
+	height: 50%;
+	border-radius: 5px;
+	margin: 100px auto;
+	background: white;
+	padding: 50px;
+}
+
+input, textarea, select{
+	margin-top: 10px;
+}
+
+label {
+	float: right;
+	padding-right: 15px;
+}
+

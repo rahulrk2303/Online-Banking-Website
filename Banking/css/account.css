@@ -1,0 +1,67 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	background-image: url("../images/14.jpg");
+	background-size: cover;
+	background-position: 0% 0%;
+	background-repeat: no-repeat;
+	overflow-x: hidden;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.vertical-menu {
+  width: 200px;
+  margin-top: 20px;
+
+}
+
+.vertical-menu a {
+
+  background-color: #343a40 ;
+  color: lightgray;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  border: 1px solid black;
+}
+
+.vertical-menu a:hover {
+  background-color: #4CAF50;
+  text-decoration: none;
+  color: white;
+}
+
+.vertical-menu a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+.account-container {
+
+	/*border: solid gray 1px;*/
+	width: 80%;
+	border-radius: 5px;
+	margin-top: 10px;
+	/*background: white;*/
+	padding-top: 30px;
+}
+
+.body-content {
+	padding: 40px;
+
+}
+
+.account-container td {
+	padding: 10px 0;
+}
+
+.account-container h2 {
+	color: #FF5722;
+}
+
+.account-container h5 {
+	color: green;
+}
+
+

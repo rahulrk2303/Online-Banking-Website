@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/account.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	
+	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+
+	<title>Account Statement</title>
+</head>
+<body>
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		
+	  	<ul class="navbar-nav mr-auto">
+	      	<a class="navbar-brand" href="Home.html">E-Bank</a>
+	  	</ul>
+
+	  	<ul class="navbar-nav">
+	    	<li class="nav-item active">
+	      	<a class="nav-link" href="Home.html">Home</a>
+	    	</li>
+	    	<li class="nav-item">
+	      	<a class="nav-link" href="About.html">About</a>
+	   	 	</li>
+	    	<li class="nav-item">
+	      	<a class="nav-link" href="Loan.html">Services</a>
+	    	</li>
+	    	<li class="nav-item">
+	      	<a class="nav-link" href="Contact.html">Contact</a>
+	    	</li>
+	    	<li class="nav-item">
+	      	<a class="nav-link" href="home.html">Logout</a>
+	    	</li>
+
+	  	</ul>
+	</nav>
+
+	<div class="row">
+		<div class="col-3">
+			
+			<div class="vertical-menu">
+			  	<a href="Account_Summary.html">Account Summary</a>
+			 	<a href="Mini_statement.html">Mini Statement</a>
+			  	<a href="Account_Statement.html" class="active">Account Statement</a>
+			</div>
+			
+			<div class="vertical-menu">
+			  	<a href="Add_Beneficiary.html">Add Beneficiary</a>
+			  	<a href="Manage_Beneficiary.html">Manage Beneficiary</a>
+			  	<a href="Transfer_Funds.html">Transfer Funds</a>
+			</div>
+			
+			<div class="vertical-menu">
+			  	<a href="Issue_Atm_Cheque.html">ATM/Cheque Request</a>
+			</div>
+			
+			<div class="vertical-menu">
+			  	<a href="Personal_Details.html">Personal Details</a>
+			  	<a href="Change_Password.html">Change Password</a>
+			</div>
+		</div>
+		<div class="col-8 body-content">
+			<div class="row">
+				<div class="col-5">
+					<h4>Welcome User</h4><br>
+					<h1>Account Statement</h1>
+					
+					<div class="account-container">
+						<h3>Select Date Range </h3>
+						<form name="date" method="post" onsubmit="return validate_date()" class="form-inline">
+							<table>
+								<tr>
+									<td width="150px">Start Date : </td>
+									<td><input type="date" name="start" class="form-control"></td>
+								</tr>
+								<tr>
+									<td>End Date : </td>
+									<td><input type="date" name="end" class="form-control"></td>
+								</tr>
+								<tr>
+									<td colspan=2>
+										<button type="submit" name="submit" class="btn btn-primary">Search</button>
+									</td>
+								</tr>
+							</table>
+						</form>
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col">
+					<table class="table table-striped">
+						<thead>
+							<tr>
+								<td><strong>ID </strong></td>
+								<td><strong>Transaction Date</strong></td>
+								<td><strong>Comment</strong></td>
+								<td><strong>Debit</strong></td>
+								<td><strong>Credit</strong></td>
+								<td><strong>Balance Amount</strong></td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>02-04-2019</td>
+								<td>Account Open</td>
+								<td>1000</td>
+								<td>0</td>
+								<td>1000</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>02-04-2019</td>
+								<td>Account Open</td>
+								<td>1000</td>
+								<td>0</td>
+								<td>1000</td>
+							</tr>
+									<tr>
+								<td>1</td>
+								<td>02-04-2019</td>
+								<td>Account Open</td>
+								<td>1000</td>
+								<td>0</td>
+								<td>1000</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>02-04-2019</td>
+								<td>Account Open</td>
+								<td>1000</td>
+								<td>0</td>
+								<td>1000</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>02-04-2019</td>
+								<td>Account Open</td>
+								<td>1000</td>
+								<td>0</td>
+								<td>1000</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>02-04-2019</td>
+								<td>Account Open</td>
+								<td>1000</td>
+								<td>0</td>
+								<td>1000</td>
+							</tr>
+									<tr>
+								<td>1</td>
+								<td>02-04-2019</td>
+								<td>Account Open</td>
+								<td>1000</td>
+								<td>0</td>
+								<td>1000</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>02-04-2019</td>
+								<td>Account Open</td>
+								<td>1000</td>
+								<td>0</td>
+								<td>1000</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>02-04-2019</td>
+								<td>Account Open</td>
+								<td>1000</td>
+								<td>0</td>
+								<td>1000</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>02-04-2019</td>
+								<td>Account Open</td>
+								<td>1000</td>
+								<td>0</td>
+								<td>1000</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

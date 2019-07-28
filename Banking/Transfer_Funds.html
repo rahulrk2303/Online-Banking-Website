@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/account.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	
+	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+
+	<title>Transfer Funds</title>
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		
+	  	<ul class="navbar-nav mr-auto">
+	      	<a class="navbar-brand" href="Home.html">E-Bank</a>
+	  	</ul>
+
+	  	<ul class="navbar-nav">
+	    	<li class="nav-item active">
+	      	<a class="nav-link" href="Home.html">Home</a>
+	    	</li>
+	    	<li class="nav-item">
+	      	<a class="nav-link" href="About.html">About</a>
+	   	 	</li>
+	    	<li class="nav-item">
+	      	<a class="nav-link" href="Loan.html">Services</a>
+	    	</li>
+	    	<li class="nav-item">
+	      	<a class="nav-link" href="Contact.html">Contact</a>
+	    	</li>
+	    	<li class="nav-item">
+	      	<a class="nav-link" href="home.html">Logout</a>
+	    	</li>
+
+	  	</ul>
+	</nav>
+
+
+	<div class="row">
+		<div class="col-3">
+			
+			<div class="vertical-menu">
+			  	<a href="Account_Summary.html">Account Summary</a>
+			 	<a href="Mini_statement.html">Mini Statement</a>
+			  	<a href="Account_Statement.html">Account Statement</a>
+			</div>
+			
+			<div class="vertical-menu">
+			  	<a href="Add_Beneficiary.html">Add Beneficiary</a>
+			  	<a href="Manage_Beneficiary.html">Manage Beneficiary</a>
+			  	<a href="Transfer_Funds.html" class="active">Transfer Funds</a>
+			</div>
+			
+			<div class="vertical-menu">
+			  	<a href="Issue_Atm_Cheque.html">ATM/Cheque Request</a>
+			</div>
+			
+			<div class="vertical-menu">
+			  	<a href="Personal_Details.html">Personal Details</a>
+			  	<a href="Change_Password.html">Change Password</a>
+			</div>
+		</div>
+		<div class="col-9 body-content">
+			<div class="row">
+				<div class="col">
+					<h4>Welcome User</h4><br>
+					<h1>Transfer Funds</h1>
+					<div class="account-container">
+						<form name="transfer" onsubmit="return validate_transfer()" method="post" class="form-inline">
+							<table>
+								<tr>
+									<td width=150px>Select Beneficiary : </td>
+									<td>
+										<select name="beneficiary" class="form-control">
+											<option value="Ben">Ben</option>
+											<option value="">Ben</option>
+											<option value="">Ben</option>		
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td>Enter Amount : </td>
+									<td><input type="number" name="amount" class="form-control"></td>
+								</tr>
+								<tr>
+									<td>Enter Password : </td>
+									<td><input type="password" name="password" class="form-control"></td>
+								</tr>
+								<tr>
+									<td colspan=2>
+										<button type="submit" name="submit" class="btn btn-primary">Transfer</button>
+									</td>
+								</tr>
+							</table>
+
+						</form>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+	<script src="js/script.js"></script>
+
+</body>
+</html>
